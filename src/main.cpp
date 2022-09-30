@@ -20,10 +20,10 @@ void loop() {
   // turn the LED ON 
   digitalWrite(D4, LOW); 
   // wait 1s 
-  delay(10); 
+  delay(1); 
  
   // turn the LED OFF 
   digitalWrite(D4, HIGH); 
   // wait 1s 
-  delay(1990); 
+  delay(9); 
 }
