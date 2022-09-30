@@ -17,13 +17,13 @@ void setup() {
  
  
 void loop() { 
-  // turn the LED ON 
-  digitalWrite(D4, LOW); 
-  // wait 1s 
-  delay(1); 
+  int i; 
+   
+  for ( i=0; i<1024; ++i) { 
+    // set the PWM pulse width 
+    analogWrite(D4, i); 
  
-  // turn the LED OFF 
-  digitalWrite(D4, HIGH); 
-  // wait 1s 
-  delay(9); 
+    // wait 1ms to add DRAMA! 
+    delay(1); 
+  } 
 }
